@@ -1,0 +1,469 @@
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <title>Sản phẩm</title>
+</head>
+
+<body class="bg-[#f1f1f1]">
+    <!-- Header -->
+    <div class="bg-[#ffffc8] p-2 px-[2%] flex flex-col md:flex-row items-center justify-around">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center mb-2 md:mb-0">
+            <img alt="Company logo" class="h-10 w-10" height="50" src="img/logo/logo.png" width="50" />
+            <div class="">
+                <p class="text-black font-bold ml-1">
+                    EGIPHONE
+                </p>
+                <p class="text-black text-[11px] ml-1">
+                    luôn là lựa chọn tốt nhất.
+                </p>
+            </div>
+        </a>
+        <!-- Thanh tìm kiếm -->
+        <div class="flex items-center bg-white rounded-full overflow-hidden mb-2 md:mb-0">
+            <input class="px-4 py-2 w-64 md:w-96 focus:outline-none" placeholder="Tìm kiếm sản phẩm..." type="text" />
+            <button class="px-4 text-red-500">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <!-- Người dùng -->
+        <div class="flex items-center">
+            <!-- Giỏ hàng -->
+            <a href="cart.html">
+                <button class="flex items-center bg-yellow-200 px-4 py-2 rounded-full">
+                    <div class="relative">
+                        <i class=" fas fa-shopping-cart text-yellow-500"></i>
+                        <span
+                            class="bg-yellow-500 text-[12px] text-white rounded-full px-2 absolute -top-[10px] left-[15px]">
+                            0
+                        </span>
+                    </div>
+                    <span class="ml-5">
+                        Giỏ hàng
+                    </span>
+                </button>
+            </a>
+            <div class="ml-4 flex items-center gap-1">
+                <i class="fas fa-phone-alt text-gray-700"></i>
+                <div>
+                    <span class="text-red-600 font-bold">
+                        024.7777.2385
+                    </span>
+                    <p class="text-[12px]">Tư vấn miễn phí</p>
+                </div>
+            </div>
+            <div class="ml-4">
+                <i class="fas fa-truck text-gray-700"></i>
+                <span>
+                    Giao hàng tận nơi
+                </span>
+            </div>
+            <!-- Quản lý tài khoản -->
+            <!-- Chỉ hiển thị khi người dùng đã đăng nhập -->
+            <div class="ml-4">
+                <p>Xin chào, Nguyễn Hiệp</p>
+            </div>
+            <div class="ml-4 relative">
+                <div class="qltaikhoan border border-black rounded-full p-2">
+                    <i class="fas fa-user-cog"></i>
+                </div>
+                <div
+                    class="dsqltaikhoan hidden shadow-lg bg-white rounded-sm w-[170px] absolute p-3 text-[14px] top-9 right-3 leading-8">
+                    <!-- Chỉ hiển thị khi người dùng chưa đăng nhập -->
+                    <a href="" class="hidden flex items-center gap-1 px-2 hover:bg-yellow-200">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <p>Đăng nhập</p>
+                    </a>
+                    <!-- Chỉ hiển thị khi người dùng đã đăng nhập -->
+                    <a href="account.html" class="flex items-center gap-1 px-2 hover:bg-yellow-200">
+                        <i class="far fa-regular fa-user"></i>
+                        <p>Tài khoản của tôi</p>
+                    </a>
+                    <hr>
+                    <a href="order.html" class="flex items-center gap-1 px-2 hover:bg-yellow-200">
+                        <i class="fas fa-shopping-bag"></i>
+                        <p>Đơn hàng của tôi</p>
+                    </a>
+                    <hr>
+                    <a href="favourite.html" class="flex items-center gap-1 px-2 hover:bg-yellow-200">
+                        <i class="icon_tym far fa-heart"></i>
+                        <p>Yêu thích</p>
+                    </a>
+                    <hr>
+                    <a href="" class="flex items-center gap-1 px-2 hover:bg-yellow-200">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <p>Đăng xuất</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div
+        class="menu w-full z-10 bg-[#fed700] flex justify-around space-x-4 overflow-x-auto gap-2 text-black text-center">
+        <a href="product.html" class="flex items-center justify-center p-2 hover:bg-white hover:cursor-pointer">
+            <i class="fas fa-mobile-alt"></i>
+            <span class="ml-2">
+                ĐIỆN THOẠI
+            </span>
+        </a>
+        <a href="product.html" class="flex items-center justify-center p-2 hover:bg-white hover:cursor-pointer">
+            <i class="fab fa-apple"></i>
+            <span class="ml-2">
+                iPhone
+            </span>
+        </a>
+        <a href="product.html" class="flex items-center justify-center p-2 hover:bg-white hover:cursor-pointer">
+            <i class="fab fa-android"></i>
+            <span class="ml-2">
+                SAMSUNG
+            </span>
+        </a>
+        <a href="product.html" class="flex items-center justify-center p-2 hover:bg-white hover:cursor-pointer">
+            <i class="fab fa-google"></i>
+            <span class="ml-2">
+                GOOGLE
+            </span>
+        </a>
+        <a href="product.html" class="flex items-center justify-center p-2 hover:bg-white hover:cursor-pointer">
+            <i class="fas fa-tv"></i>
+            <span class="ml-2">
+                SONY
+            </span>
+        </a>
+        <a href="product.html" class="flex items-center justify-center p-2 hover:bg-white hover:cursor-pointer">
+            <i class="fas fa-store"></i>
+            <span class="ml-2">
+                Góc Thanh Lý
+            </span>
+        </a>
+        <a href="product.html" class="flex items-center justify-center p-2 hover:bg-white hover:cursor-pointer">
+            <i class="fas fa-bolt"></i>
+            <span class="ml-2">
+                KHÁC &amp; LẠ
+            </span>
+        </a>
+        <a href="product.html" class="flex items-center justify-center p-2 hover:bg-white hover:cursor-pointer">
+            <i class="fas fa-tablet-alt"></i>
+            <span class="ml-2">
+                MÁY TÍNH BẢNG
+            </span>
+        </a>
+        <a href="product.html" class="flex items-center justify-center p-2 hover:bg-white hover:cursor-pointer">
+            <i class="fas fa-headphones-alt"></i>
+            <span class="ml-2">
+                PHỤ KIỆN
+            </span>
+        </a>
+    </div>
+
+    <!-- Slide, ảnh quảng cáo -->
+    <div class="grid m-10">
+        <div class="w-full flex p-5 mt-5">
+            <!-- Slide -->
+            <div class="mr-2 w-2/3 relative">
+                <div>
+                    <img class="noidungslide w-full h-full" src="img/slide_qc/slide1.png" alt="">
+                    <img class="noidungslide w-full h-full hidden" src="img/slide_qc/slide2.png" alt="">
+                    <img class="noidungslide w-full h-full hidden" src="img/slide_qc/slide3.png" alt="">
+                </div>
+                <div class="flex gap-2 absolute bottom-0 mb-3 items-center justify-center w-full">
+                    <span
+                        class="nutchuyenslide w-14 h-2 rounded-full cursor-pointer border border-black bg-blue-400"></span>
+                    <span class="nutchuyenslide w-14 h-2 rounded-full cursor-pointer border border-black"></span>
+                    <span class="nutchuyenslide w-14 h-2 rounded-full cursor-pointer border border-black"></span>
+                </div>
+            </div>
+            <!-- Ảnh quảng cáo -->
+            <div class="grid gap-1 w-1/3">
+                <img class="w-full" src="img/slide_qc/qc1.png" alt="">
+                <img class="w-full" src="img/slide_qc/qc2.png" alt="">
+                <img class="w-full" src="img/slide_qc/qc3.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bộ lọc -->
+    <div class="grid m-10">
+        <div class="space-y-4 p-6">
+            <!-- Theo các tiêu chí -->
+            <div>
+                <h2 class="font-semibold text-lg">Theo tiêu chí</h2>
+                <div class="flex space-x-2 mt-2">
+                    <button class="flex items-center px-4 py-2 border border-gray-300 rounded-md bg-white">
+                        <i class="fas fa-filter mr-2"></i> Bộ lọc
+                    </button>
+                    <select class="px-4 py-2 border border-gray-300 rounded-md">
+                        <option>Thương hiệu</option>
+                    </select>
+                    <select class="px-4 py-2 border border-gray-300 rounded-md">
+                        <option>Giá</option>
+                    </select>
+                    <select class="px-4 py-2 border border-gray-300 rounded-md">
+                        <option>Pin</option>
+                    </select>
+                    <select class="px-4 py-2 border border-gray-300 rounded-md">
+                        <option>Ram</option>
+                    </select>
+                    <select class="px-4 py-2 border border-gray-300 rounded-md">
+                        <option>Bộ nhớ trong</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Sắp xếp -->
+            <div>
+                <h2 class="font-semibold text-lg">Sắp xếp theo</h2>
+                <div class="flex space-x-2 mt-2">
+                    <button class="sapxep px-4 py-2 border border-gray-300 rounded-md bg-red-500 text-white">Bán chạy
+                        nhất</button>
+                    <button class="sapxep px-4 py-2 border border-gray-300 rounded-md bg-white">Giá thấp</button>
+                    <button class="sapxep px-4 py-2 border border-gray-300 rounded-md bg-white">Giá cao</button>
+                    <button class="sapxep px-4 py-2 border border-gray-300 rounded-md bg-white">Mới nhất</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tất cả sản phẩm -->
+    <div class="grid m-10">
+        <div class="p-6">
+            <div class="bg-white rounded-lg p-3 shadow-md">
+                <!-- Danh sách sản phẩm -->
+                <div class="grid grid-cols-3 lg:grid-cols-5">
+                    <!-- Danh sách sản phẩm -->
+                    <!-- Sản phẩm 1 -->
+                    <div class="khung p-3 hover:border hover:border-gray-300 hover:rounded-lg hover:shadow-lg">
+                        <div class="relative">
+                            <img src="img/product/ip14_tim.png" alt="">
+                            <button class="btn_tym absolute top-2 right-2 text-gray-500 hover:cursor-pointer">
+                                <i class="icon_tym far fa-heart"></i>
+                            </button>
+                        </div>
+                        <p class="text-sm py-2">iPhone 14 (12GB | 128GB) mới fullbox</p>
+                        <p class="text-red-500 font-semibold py-2">51,990,000đ</p>
+                        <div class="flex gap-2 justify-center mb-3">
+                            <a href="" class="nut bg-red-500 text-white px-4 py-1 opacity-0 hover:cursor-pointer">Mua
+                                ngay</a>
+                            <a href="product_detail.html"
+                                class="nut bg-red-500 text-white px-4 py-1 opacity-0 hover:cursor-pointer">Xem
+                                thêm</a>
+                        </div>
+                    </div>
+                    <!-- Sản phẩm 2 -->
+                    <div class="khung p-3 hover:border hover:border-gray-300 hover:rounded-lg hover:shadow-lg">
+                        <div class="relative">
+                            <img src="img/product/ip15plus.png" alt="">
+                            <button class="btn_tym absolute top-2 right-2 text-gray-500 hover:cursor-pointer">
+                                <i class="icon_tym far fa-heart"></i>
+                            </button>
+                        </div>
+                        <p class="text-sm py-2">iPhone 15 plus (12GB | 128GB) mới fullbox</p>
+                        <p class="text-red-500 font-semibold py-2">40,990,000đ</p>
+                        <div class="flex gap-2 justify-center mb-3">
+                            <a href="" class="nut bg-red-500 text-white px-4 py-1 opacity-0 hover:cursor-pointer">Mua
+                                ngay</a>
+                            <a href="product_detail.html"
+                                class="nut bg-red-500 text-white px-4 py-1 opacity-0 hover:cursor-pointer">Xem
+                                thêm</a>
+                        </div>
+                    </div>
+                    <!-- Sản phẩm 3 -->
+                    <div class="khung p-3 hover:border hover:border-gray-300 hover:rounded-lg hover:shadow-lg">
+                        <div class="relative">
+                            <img src="img/product/ip15prmax_den.png" alt="">
+                            <button class="btn_tym absolute top-2 right-2 text-gray-500 hover:cursor-pointer">
+                                <i class="icon_tym far fa-heart"></i>
+                            </button>
+                        </div>
+                        <p class="text-sm py-2">iPhone 15 Promax (12GB | 128GB) mới fullbox</p>
+                        <p class="text-red-500 font-semibold py-2">32,990,000đ</p>
+                        <div class="flex gap-2 justify-center mb-3">
+                            <a href="" class="nut bg-red-500 text-white px-4 py-1 opacity-0 hover:cursor-pointer">Mua
+                                ngay</a>
+                            <a href="product_detail.html"
+                                class="nut bg-red-500 text-white px-4 py-1 opacity-0 hover:cursor-pointer">Xem
+                                thêm</a>
+                        </div>
+                    </div>
+                    <!-- Sản phẩm 4 -->
+                    <div class="khung p-3 hover:border hover:border-gray-300 hover:rounded-lg hover:shadow-lg">
+                        <div class="relative">
+                            <img src="img/product/ip14_vang.png" alt="">
+                            <button class="btn_tym absolute top-2 right-2 text-gray-500 hover:cursor-pointer">
+                                <i class="icon_tym far fa-heart"></i>
+                            </button>
+                        </div>
+                        <p class="text-sm py-2">iPhone 13 Promax (12GB | 128GB) mới fullbox</p>
+                        <p class="text-red-500 font-semibold py-2">23,990,000đ</p>
+                        <div class="flex gap-2 justify-center mb-3">
+                            <a href="" class="nut bg-red-500 text-white px-4 py-1 opacity-0 hover:cursor-pointer">Mua
+                                ngay</a>
+                            <a href="product_detail.html"
+                                class="nut bg-red-500 text-white px-4 py-1 opacity-0 hover:cursor-pointer">Xem
+                                thêm</a>
+                        </div>
+                    </div>
+                    <!-- Sản phẩm 5 -->
+                    <div class="khung p-3 hover:border hover:border-gray-300 hover:rounded-lg hover:shadow-lg">
+                        <div class="relative">
+                            <img src="img/product/ip12.png" alt="">
+                            <button class="btn_tym absolute top-2 right-2 text-gray-500 hover:cursor-pointer">
+                                <i class="icon_tym far fa-heart"></i>
+                            </button>
+                        </div>
+                        <p class="text-sm py-2">iPhone 12 Promax (12GB | 128GB) mới fullbox</p>
+                        <p class="text-red-500 font-semibold py-2">18,990,000đ</p>
+                        <div class="flex gap-2 justify-center mb-3">
+                            <a href="" class="nut bg-red-500 text-white px-4 py-1 opacity-0 hover:cursor-pointer">Mua
+                                ngay</a>
+                            <a href="product_detail.html"
+                                class="nut bg-red-500 text-white px-4 py-1 opacity-0 hover:cursor-pointer">Xem
+                                thêm</a>
+                        </div>
+                    </div>
+                    <!-- Sản phẩm 6 -->
+                    <div class="khung p-3 hover:border hover:border-gray-300 hover:rounded-lg hover:shadow-lg">
+                        <div class="relative">
+                            <img src="img/product/ip11.png" alt="">
+                            <button class="btn_tym absolute top-2 right-2 text-gray-500 hover:cursor-pointer">
+                                <i class="icon_tym far fa-heart"></i>
+                            </button>
+                        </div>
+                        <p class="text-sm py-2">iPhone 11 Promax (12GB | 128GB) mới fullbox</p>
+                        <p class="text-red-500 font-semibold py-2">8,990,000đ</p>
+                        <div class="flex gap-2 justify-center mb-3">
+                            <a href="" class="nut bg-red-500 text-white px-4 py-1 opacity-0 hover:cursor-pointer">Mua
+                                ngay</a>
+                            <a href="product_detail.html"
+                                class="nut bg-red-500 text-white px-4 py-1 opacity-0 hover:cursor-pointer">Xem
+                                thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Phân trang -->
+                <div class="flex space-x-2 justify-center">
+                    <a href="#">
+                        <div
+                            class="phantrang bg-blue-500 text-white flex items-center justify-center w-12 h-12 border border-gray-300 rounded-md">
+                            1
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div
+                            class="phantrang text-blue-500 flex items-center justify-center w-12 h-12 border border-gray-300 rounded-md">
+                            2
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div
+                            class="phantrang text-blue-500 flex items-center justify-center w-12 h-12 border border-gray-300 rounded-md">
+                            3
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div
+                            class="phantrang text-blue-500 flex items-center justify-center w-12 h-12 border border-gray-300 rounded-md">
+                            4
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div
+                            class="phantrang text-blue-500 flex items-center justify-center w-12 h-12 border border-gray-300 rounded-md">
+                            5
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-[#ffffc8]">
+        <div class="container mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div>
+                <a href="index.html" class="flex items-center mb-2 md:mb-0">
+                    <img alt="Company logo" class="h-10 w-10 md:h-20 md:w-20" height="50" src="img/logo/logo.png"
+                        width="50" />
+                    <div class="">
+                        <p class="text-black text-xl md:text-4xl font-bold ml-1">
+                            EGIPHONE
+                        </p>
+                        <p class="text-black text-[14px] ml-1">
+                            luôn là lựa chọn tốt nhất.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold mb-4">
+                    Hỗ trợ
+                </h2>
+                <p class="mb-2">
+                    Sơn Trà, Đà Nẵng, Việt Nam
+                </p>
+                <p class="mb-2">
+                    nhiep@gmail.com
+                </p>
+                <p class="mb-2">
+                    024.7777.2385
+                </p>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold mb-4">
+                    Tài khoản
+                </h2>
+                <p class="mb-2">
+                    Tài khoản của tôi
+                </p>
+                <p class="mb-2">
+                    Đăng nhập / Đăng ký
+                </p>
+                <p class="mb-2">
+                    Giỏ hàng
+                </p>
+                <p class="mb-2">
+                    Đơn hàng
+                </p>
+                <p class="mb-2">
+                    Cửa hàng
+                </p>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold mb-4">
+                    Liên kết
+                </h2>
+                <p class="mb-2">
+                    Chính sách bảo mật
+                </p>
+                <p class="mb-2">
+                    Điều khoản sử dụng
+                </p>
+                <p class="mb-2">
+                    Câu hỏi thường gặp
+                </p>
+                <p class="mb-2">
+                    Liên hệ
+                </p>
+            </div>
+        </div>
+        <div class="text-center mt-10 text-gray-500">
+            <p>
+                © Copyright Hiep 2024. All right reserved
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script src="js/index.js"></script>
